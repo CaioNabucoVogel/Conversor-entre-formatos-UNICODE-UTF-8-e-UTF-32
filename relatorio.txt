@@ -1,0 +1,16 @@
+Relatório de Conversão entre Codificações UNICODE UTF-8 e UTF-32
+
+/* Caio Nabuco Vogel 2310878 3WA */
+/* Vinícius Nahuel Naveiras Coutinho 2311693 3WA */
+
+Funcionamento
+O projeto foi desenvolvido com o objetivo de realizar a conversão entre os formatos de codificação UNICODE UTF-8 e UTF-32, utilizando duas funções principais: convUtf8p32 e convUtf32p8.
+
+O que está funcionando:
+Leitura de Arquivos: Os arquivos de entrada são lidos corretamente nas codificações UTF-8 e UTF-32, com verificação de erros ao abrir ou ler arquivos.
+Conversão de UTF-8 para UTF-32: A função convUtf8p32 converte corretamente arquivos codificados em UTF-8 para UTF-32, utilizando a ordem de bytes little-endian e incluindo o BOM no início do arquivo.
+Conversão de UTF-32 para UTF-8: A função convUtf32p8 também realiza a conversão de arquivos em UTF-32 para UTF-8, respeitando as regras da codificação e verificando a presença de um BOM válido no arquivo de entrada.
+Gravação de Arquivos: Os arquivos de saída são gerados corretamente, tanto em UTF-8 quanto em UTF-32, mantendo a integridade do conteúdo original.
+
+Conclusão
+O projeto está funcionando conforme esperado no que diz respeito às funções de conversão e manipulação de arquivos. A principal pendência é o problema com a execução no ambiente Visual Studio, que ainda precisa ser resolvido.
